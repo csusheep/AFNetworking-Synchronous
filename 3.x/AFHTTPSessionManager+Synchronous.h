@@ -110,4 +110,16 @@
                             task:(NSURLSessionDataTask *__autoreleasing *)taskPtr
                            error:(NSError *__autoreleasing *)outError;
 
+- (id)syncGET:(NSString *)URLString
+   parameters:(NSDictionary *)parameters
+         task:(NSURLSessionDataTask *__autoreleasing *)taskPtr
+      timeOut:(NSTimeInterval)timeout
+        error:(NSError *__autoreleasing *)outError;
+
+- (id)syncPOST:(NSString *)URLString
+    parameters:(NSDictionary *)parameters
+          task:(NSURLSessionDataTask *__autoreleasing *)taskPtr
+       timeOut:(NSTimeInterval)timeout
+         error:(NSError *__autoreleasing *) outError;
+
 @end
